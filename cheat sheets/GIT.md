@@ -7,6 +7,7 @@
 
 ## prepare the forlder
 ```bash
+branch -M main
 git init
 git add .
 git commit -m 'first init'
@@ -46,7 +47,9 @@ git merge [barance name]
 ## remote
 
 ```bash
-git remote add origine https://github.com/amine-deb/bashart.git
+git branch -M main
+git remote add origin https://github.com/amine-deb/bashart.git
+git push -u origin main
 ```
 > setting the target repository
 
@@ -57,24 +60,6 @@ git push -f origin master
 ```
 > push a specific branche to the remote repository
 
-
-
-from git hub
-
-or create a new repository on the command line
-echo "# pythonart" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/amine-deb/pythonart.git
-git push -u origin main
-…or push an existing repository from the command line
-git remote add origin https://github.com/amine-deb/pythonart.git
-git branch -M main
-git push -u origin main
-…or import code from another repository
-You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
 
 
