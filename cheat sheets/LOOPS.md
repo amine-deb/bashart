@@ -72,7 +72,7 @@ done
 
 ```
 
-## 6. LOOP FROM TEXT TYPE
+## 7. LOOP FROM TEXT TYPE
 ```bash
 #domain.txt containe a domain name in each line 
 for var in $(cat domain.txt)
