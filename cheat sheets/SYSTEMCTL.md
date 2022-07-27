@@ -1,13 +1,14 @@
 # SYSTEMCTL
 
 ##VIEWING systemd INFORMATION
-
-systemctl list-dependencies Show a unit’s dependencies
-systemctl list-sockets List sockets and what activates
-systemctl list-jobs View active systemd jobs
-systemctl list-unit-files See unit files and their states
-systemctl list-units Show if units are loaded/active
-systemctl get-default List default target (like run level)
+|COMMAND | DESCRIPTION
+|:---       				      |:---:  			                         |
+| systemctl list-dependencies     | Show a unit’s dependencies               |
+| systemctl list-sockets List     | sockets and what activates               |
+| systemctl list-jobs View active | systemd jobs                             |
+| systemctl list-unit-files       | See unit files and their states          |
+| systemctl list-units            | Show if units are loaded/active          |
+| systemctl get-default           | List default target (like run level)     |
 
 ##WORKING WITH SERVICES
 
@@ -41,6 +42,7 @@ journalctl -f Follow messages as they appear
 journalctl -k Show only kernel messages
 
 ##USING UNIT FILES
-
+```
 Besides services, most systemd commands can work with these unit types: paths,
 slices, snapshots, sockets, swaps, targets, and timers
+```
