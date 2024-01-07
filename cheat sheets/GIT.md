@@ -19,7 +19,7 @@ git rm --cacher [file]
 > to remove the file (unstage)
 ```
 
-##setup for this computer 
+## setup for this computer 
 
 ```bash
 git config --global user.name 'amine-deb'  
@@ -30,19 +30,19 @@ git config --global user.email 'amine.bc@hotmail.com'
 ## branching
 
 ```bash
-git branche [barance name] 
+git branch [baranch name] 
 ```
 > create a new branch
 
 ```bash
-git checkout [barance name] 
+git checkout [baranch name] 
 ```
-> move to another branche
+> move to another branch
 
 ```bash
-git merge [barance name]
+git merge [baranch name]
 ```
-> merge the [barance name] to the current one
+> merge the [baranch name] to the current one
 
 ## remote
 
