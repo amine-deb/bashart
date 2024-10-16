@@ -94,8 +94,8 @@ This guide provides a quick overview of how to use variables, different types of
 | `$`          | Variable/command substitution, arithmetic       | `echo $USER`                              |
 | `&`          | Run command in background                       | `sleep 10 &`                              |
 | `&&`         | Logical AND                                     | `mkdir dir && cd dir`                     |
-| `|`          | Pipe output to another command                  | `ls -l | grep "txt"`                      |
-| `||`         | Logical OR                                      | `cd /dir || echo "Failed"`                |
+|  |           | Pipe output to another command                  | `ls -l | grep "txt"`                      |
+|  ||          | Logical OR                                      | `cd /dir || echo "Failed"`                |
 | `;`          | Command separator                               | `echo "Hello"; echo "World"`              |
 | `:`          | No-op (null command)                            | `: # This does nothing`                   |
 | `~`          | Home directory                                  | `cd ~`                                    |
