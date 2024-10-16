@@ -32,13 +32,13 @@ This guide provides a quick overview of how to use variables, different types of
 
 ## Brackets
 
-| Type     | Usage                                    | Correct Example                                  | Incorrect Example                    |
-|----------|-----------------------------------------|--------------------------------------------------|-------------------------------------|
-| `()`     | Subshell or command substitution        | `files=$(ls)` or `(cd /tmp; ls)`                 | `files=ls` (fails without subshell) |
-| `(( ))`  | Arithmetic operations                   | `result=$((num1 + num2))`                        | `result=(num1 + num2)` (incorrect)  |
-| `[ ]`    | Basic conditionals                      | `if [ "$a" -gt 5 ]; then echo "Yes"; fi`         | `if [ "$a"-gt 5 ];` (missing spaces)|
-| `[[ ]]`  | Enhanced conditionals                   | `if [[ "$name" == *"Doe" ]]; then echo "Match"`  | `if [["$name" == *"Doe"]];` (incorrect)|
-| `{ }`    | Variable expansion, command grouping    | `echo "${greeting} World"` or `{ echo "Hello"; echo "World"; }` | `echo $greetingWorld` (variable name misinterpreted) |
+| Type        | Usage                                    | Correct Example                                  | Incorrect Example                    |
+|-------------|-----------------------------------------|--------------------------------------------------|-------------------------------------|
+| `()`        | Subshell or command substitution        | `files=$(ls)` or `(cd /tmp; ls)`                 | `files=ls` (fails without subshell) |
+| `(( ))`     | Arithmetic operations                   | `result=$((num1 + num2))`                        | `result=(num1 + num2)` (incorrect)  |
+| `[ ]`       | Basic conditionals                      | `if [ "$a" -gt 5 ]; then echo "Yes"; fi`         | `if [ "$a"-gt 5 ];` (missing spaces)|
+| `[[ ]]`     | Enhanced conditionals                   | `if [[ "$name" == *"Doe" ]]; then echo "Match"`  | `if [["$name" == *"Doe"]];` (incorrect)|
+| `{ }`       | Variable expansion, command grouping    | `echo "${greeting} World"` or `{ echo "Hello"; echo "World"; }` | `echo $greetingWorld` (variable name misinterpreted) |
 
 ### Explanation:
 - **Parentheses `()`**:
