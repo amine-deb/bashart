@@ -26,6 +26,11 @@ git config --global user.name 'amine-deb'
 git config --global user.email 'amine.bc@hotmail.com' 
 ```
 
+## versionning
+
+```bash
+git tag -a 'v1.0.0' -m 'version v1.0.0'
+```
 
 ## branching
 
